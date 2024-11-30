@@ -10,8 +10,7 @@ export default async function DocumentIdPage({ params }: DocumentIdPageProps) {
   const { documentId } = await params;
 
   return (
-    <div>
-      document id: <span className="text-red-400">{documentId}</span>
+    <div className="min-h-screen bg-[#FAFBFD]">
       <Editor />
     </div>
   );
