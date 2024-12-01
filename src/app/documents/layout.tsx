@@ -5,10 +5,5 @@ interface DocumentLayoutProps {
 }
 
 export default function DocumentsLayout({ children }: DocumentLayoutProps) {
-  return (
-    <div className="flex flex-col gap-y-4">
-      <nav className="w-full bg-zinc-900 text-white">navbar</nav>
-      {children}
-    </div>
-  );
+  return <div className="flex flex-col gap-y-4">{children}</div>;
 }
