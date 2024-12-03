@@ -34,6 +34,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
@@ -66,12 +67,14 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
 .tiptap {
+
   /*image specific styling*/
   img {
     display: block;
@@ -101,7 +104,7 @@ body {
       position: relative;
       vertical-align: top;
 
-      > * {
+      >* {
         margin-bottom: 0;
       }
     }
@@ -196,6 +199,7 @@ body {
       margin-bottom: 0.25em;
     }
   }
+
   ol li {
     list-style-type: decimal;
 
@@ -215,13 +219,13 @@ body {
       align-items: flex-start;
       display: flex;
 
-      > label {
+      >label {
         flex: 0 0 auto;
         margin-right: 0.5rem;
         user-select: none;
       }
 
-      > div {
+      >div {
         flex: 1 1 auto;
       }
     }
@@ -233,5 +237,41 @@ body {
     ul[data-type="taskList"] {
       margin: 0;
     }
+  }
+
+  /* Heading styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+    margin-top: 2.5rem;
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
   }
 }
